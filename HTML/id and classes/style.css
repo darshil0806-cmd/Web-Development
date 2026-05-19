@@ -1,0 +1,10 @@
+.red{
+color: red;
+}
+/* . matlab class # matlab id,colour thi fornt no color change thai and backcolour thi bac. no */
+.bg-yellow{
+    background-color: yellow;
+}
+#firstdiv{
+    background-color: goldenrod;
+}
