@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Absolute Units</title>
+  <style>
+    .box {
+      border: 2px solid black;
+      margin: 10px;
+      display: inline-block;
+    }
+    .xyz {
+      margin-top: 20px;
+      background-color: aquamarine;
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+    }
+    .cm { width: 3cm; height: 2cm; background: lightblue; }
+    .mm { width: 30mm; height: 20mm; background: lightgreen; }
+    .in { width: 2in; height: 1in; background: lightcoral; }
+    .pt { width: 100pt; height: 50pt; background: gold; }
+    .px { width: 200px; height: 100px; background: violet; }
+  </style>
+</head>
+<body>
+  <h2>CSS Absolute Units</h2>
+  <div class="box cm">3cm × 2cm</div>
+  <div class="box mm">30mm × 20mm</div>
+  <div class="box in">2in × 1in</div>
+  <div class="box pt">100pt × 50pt</div>
+  <div class="box px">200px × 100px</div>
+  <div class="xyz">Absolute Units
+Absolute units are fixed — they do not scale with the screen size or parent element. They are best suited for print layouts, but in web design, we usually avoid them except for pixels (px).
+
+cm – Centimeters (1 cm = 37.8 px)
+mm – Millimeters (1 mm = 1/10th of 1 cm)
+in – Inches (1 in = 96 px = 2.54 cm)
+pt – Points (1pt = 1/72 in)
+pc – Picas (1pc = 12pt = 1/6 in)
+px – Pixels (1px = 1/96 in) → Most commonly used on screens
+Pixels (px) are most widely used because they directly map to screen dots</div>
+</body>
+</html>

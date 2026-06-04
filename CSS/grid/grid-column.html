@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid - Column Span</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 10px;
+      background: lightseagreen;
+      padding: 10px;
+    }
+    .grid-item {
+      background: white;
+      border: 1px solid #333;
+      padding: 20px;
+      text-align: center;
+    }
+    .span-columns {
+      grid-column: 1 / 3; /* Span across 2 columns */
+      background: lightblue;
+    }
+  </style>
+</head>
+<body>
+  <h2>Grid Column Span</h2>
+  <div class="grid-container">
+    <div class="grid-item span-columns">Spanning 2 Columns</div>
+    <div class="grid-item">B</div>
+    <div class="grid-item">C</div>
+  </div>
+</body>
+</html>

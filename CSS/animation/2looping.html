@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background: red;
+      animation-name: moveBox;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    @keyframes moveBox {
+      0%   { transform: translateX(0px); background: red; }
+      50%  { transform: translateX(200px); background: yellow; }
+      100% { transform: translateX(0px); background: green; }
+    }
+  </style>
+</head>
+<body>
+  <h2>Looping Animation</h2>
+  <div></div>
+</body>
+</html>

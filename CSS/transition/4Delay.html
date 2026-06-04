@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transition Delay</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px;
+      height: 150px;
+      margin: 50px auto;
+      background: lightpink;
+      border: 2px solid crimson;
+      transition: width 2s ease-in-out 1s;
+    }
+    .box:hover {
+      width: 300px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Transition with Delay</h2>
+  <div class="box"></div>
+  <p>Hover the box → transition <b>waits 1s</b> before starting, then expands smoothly.</p>
+</body>
+</html>

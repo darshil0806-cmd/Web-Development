@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* width: 2048px; vw will cover whole veiw screen display */
+            width: 80vw;
+            background-color: aquamarine;
+            margin: 23px auto;
+            /* 23 px is top bottom margin and auto is left right margin center 
+            vw = view width and vh = view height */
+
+        }
+        .container {
+            border: 2px solid red;
+            box-sizing: border-box;
+            width: 60ch;
+            margin: 23px auto;
+            padding: 100px;
+            background-color: lightpink;
+            font-size: 2em;
+            border-color: aqua;
+            box-sizing: border-box;
+            border-radius: 50px;
+            /* em means jetle size by default auto ave tetle nae 2 em,3em means eno twice & thirce size 
+               rem means root element na n times size karaie*/
+        }
+        .container .box-1{
+            padding: 10px;
+            border-color: blue;
+            background-color: limegreen;
+            width: 50%; /*means 50 percent of parent element    */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur dolores, temporibus reprehenderit, nam dolorum enim earum, natus provident quibusdam sunt quae! Veniam, voluptatibus ullam quis, similique, rerum atque consectetur nemo asperiores voluptates quisquam tenetur?
+        </p>
+        <p class="box-1">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam cumque harum culpa aut officia! Assumenda aspernatur mollitia sequi debitis nostrum, molestiae tempora suscipit enim quo delectus voluptate, eveniet, sunt incidunt blanditiis asperiores at dolorum?
+        </p>
+    </div>
+</body>
+</html>

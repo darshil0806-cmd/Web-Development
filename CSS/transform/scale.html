@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Scale Example</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .box {
+      width: 150px; height: 150px;
+      margin: 50px auto;
+      background: lightgreen;
+      border: 2px solid darkgreen;
+      transition: transform 0.5s;
+    }
+    .box:hover {
+      transform: scale(1.4, 1.2);
+    }
+  </style>
+</head>
+<body>
+  <h2>Scale Example</h2>
+  <div class="box"></div>
+  <p>Hover the box to increase its <b>width by 1.4x</b> and <b>height by 1.2x</b>.</p>
+</body>
+</html>

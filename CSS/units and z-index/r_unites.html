@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Relative Units</title>
+  <style>
+    body { font-size: 16px; }
+    .parent {
+      border: 2px solid black;
+      padding: 10px;
+      width: 50%;
+    }
+    
+    .em { font-size: 2em; background: lightblue; }
+    .rem { font-size: 2rem; background: lightgreen; }
+    .percent { width: 80%; height: 50px; background: coral; }
+    .vh { height: 20vh; background: gold; }
+    .vw { width: 50vw; background: violet; height: 50px; }
+    .xyz{
+        background-color: bisque;
+        align-self: auto;
+        font-size: 20px;
+        font-weight: 800;
+
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Relative Units</h2>
+  <div class="parent">
+    <p class="em">This is 2em (relative to parent font-size)</p>
+    <p class="rem">This is 2rem (relative to root font-size)</p>
+    <div class="percent">This box is 80% of parent width</div>
+    <div class="vh">This box is 20% of viewport height</div>
+    <div class="vw">This box is 50% of viewport width</div>
+  </div>
+  <div class="xyz">Relative Units
+Relative units are flexible. They adjust depending on the parent element or the viewport size, making them essential for responsive design.<br>
+
+em - Relative to the font size of the parent element. Eg: 5em means the size would be 5 times the current font size.<br>
+ex - Relative to X height of the existing font<br>
+ch - Relative to the width/radius of the character “0”.<br>
+rem - Relative to the font size of the root element.<br>
+vw - Relative to 1% of the width of the viewport. (Viewport is the area of the website visible to the user.)<br>
+vh - Relative to 1% of the height of the viewport<br>
+% - Relative to the parent element’s size.</div>
+</body>
+</html>

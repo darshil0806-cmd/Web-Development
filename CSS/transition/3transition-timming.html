@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Transition Timing</title>
+  <style>
+    body { text-align: center; font-family: Arial; }
+    .container { display: flex; justify-content: center; gap: 20px; }
+    .box {
+      width: 80px; height: 80px;
+      background: skyblue;
+      border: 2px solid navy;
+      transition: width 2s;
+    }
+    .linear:hover { transition-timing-function: linear; width: 200px; }
+    .ease:hover { transition-timing-function: ease; width: 200px; }
+    .ease-in:hover { transition-timing-function: ease-in; width: 200px; }
+    .ease-out:hover { transition-timing-function: ease-out; width: 200px; }
+    .ease-in-out:hover { transition-timing-function: ease-in-out; width: 200px; }
+  </style>
+</head>
+<body>
+  <h2>CSS Transition Timing Functions</h2>
+  <div class="container">
+    <div class="box linear">linear</div>
+    <div class="box ease">ease</div>
+    <div class="box ease-in">ease-in</div>
+    <div class="box ease-out">ease-out</div>
+    <div class="box ease-in-out">ease-in-out</div>
+  </div>
+  <p>Hover each box to see how speed changes differently depending on the timing function.</p>
+</body>
+</html>

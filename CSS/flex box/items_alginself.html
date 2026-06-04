@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  height: 200px;
+  align-content: center;
+  background: lavender;
+  align-items: center;
+}
+.flex-container div {
+  background: orange;
+  color: white;
+  padding: 20px;
+  margin: 5px;
+}
+.item1 { order: 3; }
+.item2 { order: 1;
+    align-self: flex-end; }
+.item3 { order: 2; }
+
+</style>
+</head>
+<body>
+<h2>Align Self Example</h2>
+<div class="flex-container">
+  <div class="item1">One</div>
+  <div class="item2">Two</div>
+  <div class="item3">Three</div>
+</div>
+</body>
+</html>

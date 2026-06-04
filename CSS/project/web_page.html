@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            display: unset;
+        }
+
+        :root {
+            view-transition-name: unset;
+        }
+
+        .logo {
+            width: 40px;
+            height: 23px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 164px;
+            gap: 34px;
+        }
+
+        nav.navbar {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(243, 238, 238);
+            border: 1px solid black;
+            border-radius: 5px;
+            right: 80px;
+            left: 80px;
+            top: 60px;
+            position: fixed;
+        }
+
+        .right ul {
+            display: flex;
+            height: 70px;
+            padding: 0px 0;
+        }
+
+        .right ul li {
+            list-style: none;
+            padding: 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .left ul {
+            display: flex;
+            height: 70px;
+            padding: 0px 0;
+            align-items: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        nav.hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 450px;
+        }
+
+        nav.hero h1 {
+            font-size: 50px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        nav.hero p {
+            font-size: 20px;
+            text-align: center;
+            top: 200px;
+
+        }
+
+        nav.buttons1 {
+            display: flex;
+            justify-content: center;
+            align-items: auto;
+        }
+
+        nav.buttons1 ul {
+            display: flex;
+            gap: 60px;
+            list-style: none;
+            padding: 0px 0;
+        }
+
+        nav.buttons1 ul li {
+            display: flex;
+        }
+
+        nav.grid {
+            display: grid;
+            grid-template-columns: 0.5fr 0.5fr 0.5fr;
+            grid-template-rows: 0.5fr;
+            justify-items: center;
+            align-items: center;
+            margin-top: 50px;
+            padding: 0 400px;
+        }
+
+        nav.grid .gridcl {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 80px;
+            border-right: 1px solid black;
+        }
+
+        nav.grid .gridcl h1 {
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        nav.grid .gridcl p {
+            color: rgb(101, 101, 100);
+            font-size: 23px;
+        }
+
+        nav.grid .gridcl:last-child {
+            border-right: none;
+        }
+
+        nav.img1 {
+            justify-content: center;
+            align-items: center
+        }
+        nav.img1 p {
+            display: vertical;
+            font-size: 20px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 500;
+            font-style:initial;
+            font-size: 27px;
+        }
+        nav.img1e {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+        }
+        nav.img1e img {
+            height: 30px;
+        }
+        nav.body1 {
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 0 100px;
+            margin-top: 50px;
+            background-color: rgb(234, 230, 223);
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        nav.body1 .span-columns {
+            grid-column: 1 / 3;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav.body1 div { 
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+        }
+        nav.body1 div h1 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: left;
+        }
+        nav.body1 div p {
+            font-size: 20px;
+            color: rgb(101, 101, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/UE_Site-Logo-webp.webp" alt="">
+
+            </div>
+            <div class="right">
+                <ul>
+                    <li>Products</li>
+                    <li>Buy</li>
+                    <li>Renew</li>
+                    <li>Support</li>
+                    <li>Learn</li>
+                    <li>Company</li>
+                </ul>
+
+            </div>
+            <div class="left">
+                <ul>
+                    <li><button
+                            style="padding: 10px 20px; font-size: 20px; background-color: rgb(252, 185, 0); color: white; border: none; border-radius: 5px;cursor: pointer;">Download</button>
+                    </li>
+                    <li>English</li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <body>
+        <nav class="hero">
+            <div>
+                <h1>Secure text editor <br>
+                    for regulated industries</h1>
+                <p>UltraEdit is a text and code editor for organisations that need to handle sensitive<br>data with
+                    greater security than open-source editors can offer.</p>
+            </div>
+
+        </nav>
+        <nav class="buttons1">
+            <div>
+                <ul>
+                    <li><button
+                            style="padding: 10px 20px; font-size: 20px;cursor: pointer; background-color: rgb(252, 185, 0); color: white; border: none; border-radius: 5px;">Talk
+                            to sales</button></li>
+                    <li><button
+                            style="padding: 10px 20px; font-size: 20px;cursor: pointer; background-color: white; color:black; border: 2px solid rgb(252, 185, 0); border-radius: 5px;">View
+                            plans</button></li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="grid">
+            <div class="gridcl">
+                <h1>500K+</h1>
+                <p>Business users</p>
+            </div>
+            <div class="gridcl">
+                <h1>
+                    30+
+                </h1>
+                <p>
+                    Years in the market
+                </p>
+            </div>
+            <div class="gridcl">
+                <h1>2h avg. </h1>
+                <p>Support response time</p>
+            </div>
+
+        </nav>
+        <nav class="img1">
+            <div><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/huge_file-new-1.webp" alt=""
+                    style="width: 60%; height: auto; border-radius: 10px;padding-left: 20%;"></div>
+            </div>
+
+            <div>
+                <p class="i">TRUSTED BY 500,000+ BUSINESS USERS<br>FROM VARIOUS INDUSTRIES</p>
+            </div>
+        </nav>
+        <nav class="img1e">
+            <div class="img"><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/image-21.svg" alt=""></div>
+            <p>4.7</p>
+            <div><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Stars.png" alt=""
+                style="width: 250px;"></div>
+            <p>(1,234 reviews)</p>
+        </nav>
+        <nav class="body1">
+            <div class="span-columns">
+                <h1 style="font-size: 70px; font-weight: 700;text-align: center;">Built for teams that go beyond <br> basic editing</h1>
+                <p style="font-size: 20px; color: rgb(101, 101, 100); text-align: center;">From sensitive configuration files to large logs and complex data workflows,<br> UltraEdit helps teams work with more control, speed, and <br> confidence.</p>
+            </div>
+            <div ><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/security.webp" alt=""
+                style="width: 80%; height: 60%; border-radius: 10px;justify-content:center"padding-top:200px;>
+            <span></div>
+            <div>
+            <h1>Reduce risk when working with sensitive files</h1>
+            <p>UltraEdit lets your team edit sensitive files in a local desktop environment, reducing unnecessary exposure to cloud uploads, browser-based tools, or unmanaged editing workflows.
+
+            <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Local desktop editing for sensitive work</p>
+            <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Ongoing security updates and maintenance</p>
+            <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">SOC 2 compliant software practices</p>
+            <button  style="padding: 10px 20px; font-size: 20px;cursor: pointer; background-color: rgb(252, 185, 0); color: black; border: none; border-radius: 5px;">Explore our security standards</button>
+            </p>
+            </span>
+            </div>
+            <div >
+                <h1>Keep large file work moving</h1>
+                <p>UltraEdit helps your team keep working with large files without the usual slowdowns, crashes, or extra steps like splitting files into smaller parts.</p>
+                <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Handles 10GB+ files</p>
+                <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Advanced search, replace, and file navigation</p>
+                <p> <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Built for logs, XML, CSV, code, and data files</p>
+                <button  style="padding: 10px 20px; font-size: 20px;cursor: pointer; background-color: rgb(252, 185, 0); color: black; border: none; border-radius: 5px;">See how UltraEdit handles large files</button>
+            </div>
+            <div >
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/performance.webp" alt=""
+                style="width: 80%; height: 60%; border-radius: 10px;justify-content:center"padding-top:200px>
+            </div>
+            <div>
+                <img src="https://www.ultraedit.com/wp-content/uploads/2023/01/support.webp" alt=""
+                style="width: 80%; height: 60%; border-radius: 10px;justify-content:center"padding-top:200px>>          
+            </div>
+            <div>
+                <h1>Get support when critical work is blocked</h1>
+                <p>UltraEdit gives your team access to technical support when issues get in the way, helping avoid long forum searches, internal guesswork, and unnecessary delays.</p>
+                <p><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Dedicated technical support team</p>
+                <p><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Less dependency on forums and community fixes</p>
+                <p><img src="https://www.ultraedit.com/wp-content/uploads/2023/01/Icon-1.svg" alt="" style="width: 20px; height: 20px; vertical-align: middle;">Fast response when your team needs help</p>
+                <button  style="padding: 10px 20px; font-size: 20px;cursor: pointer; background-color: rgb(252, 185, 0); color: black; border: none; border-radius: 5px;">Learn about UltraEdit support</button>
+            </div>
+        </nav>
+
+
+    </body>
+
+</html>

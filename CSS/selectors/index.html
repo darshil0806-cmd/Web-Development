@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* class selector */
+        .anyname {
+            
+            color: red;
+            text-align: center;
+            font-size: 21px;
+            border-color: black;
+            border: 2px solid black;
+            background-color: yellow;
+            padding: 10px;
+
+        }
+
+        div:hover {
+            background-color: palegreen;
+            cursor: pointer;
+        }
+        /*id selector write id =.. in body*/
+        #idname {
+            background-color: aqua;
+        }
+        /* child selector para ka bachha use ka part internal me change karna ho toh */
+        div > p {
+            color: purple;
+            background-color: lightgreen;
+        }
+        /* Descendant sellector article ni andar pan para hoi toh change kari de child sellector na kare
+        div p {
+            color: purple;
+            background-color: lightgreen;
+        } */
+        /* pseudo selector */
+         a.visited{
+            color: red;
+         }
+         a.link{
+            color: greenyellow;
+         }
+         a.active{
+            background-color: orange;
+         }
+         p:first-child{
+            background-color: lightpink;
+         }
+         /* universal selector applicable for all */
+         * {
+            margin: 0;
+            padding: 0;
+         }
+         
+    </style>
+</head>
+
+<body>
+    <div class="anyname">
+        i am in div
+    </div>
+    <div id="idname">
+        i am out side div and my colur is not change due to .anyname
+        <p>i am para inside div</p>
+        <article>
+            i am an article inside div so not child of div
+            <p>i am para inside inside article div</p>
+        </article>
+    </div>
+    <div id="idname">
+        i am out side div and my colur is not change due to .anyname
+        <p>i am para inside div</p>
+        
+        <article>
+            i am an article inside div so not child of div
+            <p>i am para inside inside article div
+                unbracked comment to see me in colour
+            </p>
+        </article>
+        
+    </div>
+    <div>
+        <a href="https://www.google.com" class="visited">Go to Google</a>
+    </div>
+
+</body>
+
+</html>

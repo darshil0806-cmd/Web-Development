@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid - Columns & Rows</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr; /* 3 columns, the middle column is twice as wide */
+      grid-template-rows: 100px auto;    /* 2 rows: first row fixed at 100px, second row auto-sized */
+      gap: 10px;
+      background-color: #4CAF50;
+      padding: 10px;
+    }
+    .grid-item {
+      background-color: rgba(255,255,255,0.8);
+      border: 1px solid #333;
+      text-align: center;
+      padding: 20px;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Grid with 3 Columns and 2 Rows</h2>
+  <div class="grid-container">
+    <div class="grid-item">1</div>
+    <div class="grid-item">2</div>
+    <div class="grid-item">3</div>
+    <div class="grid-item">4</div>
+    <div class="grid-item">5</div>
+    <div class="grid-item">6</div>
+  </div>
+</body>
+</html>

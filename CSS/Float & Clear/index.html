@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & clear</title>
+    <style>
+        .cards{
+            border: 2px solid black;
+
+        }
+        img{
+             float: left;/* float left allow content on right side  */
+            margin-right: 20px;
+        }
+        .card{
+            border: 2px solid red;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        .card:nth-child(3){
+            clear: both;/* clear both allow content on next line . there is also clear right and left*/
+            border: solid green;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="cards">
+        <img src="data:image/jpeg;base64,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" alt="" width="230">
+        
+        <div class="card">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, sequi nisi aut eveniet soluta natus id dolorum veritatis optio dolor nulla unde error!
+            </p>Card 1</div>
+        <div class="card">
+            <p>
+                from this card content is on right side of image because of float left and margin right 20px.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, aspernatur aliquid. Exercitationem beatae, temporibus sed numquam, necessitatibus eligendi suscipit reiciendis magni architecto ratione perspiciatis! Ipsa voluptatum voluptatem, perferendis saepe culpa aspernatur tenetur, fugiat in, doloribus error debitis ut totam consectetur et ad! Ea cum saepe quasi iste perspiciatis consectetur recusandae soluta. Nesciunt quae delectus error, quos voluptates saepe facere officiis illo fuga placeat sunt harum unde, reprehenderit assumenda aut voluptate. Placeat ab officia ex id recusandae necessitatibus dolorem veritatis accusamus dolores iusto! Assumenda voluptates natus, asperiores consequuntur ea atque sapiente doloremque sequi ad architecto non temporibus corrupti praesentium adipisci? Aliquid animi doloribus cumque asperiores fuga, delectus, impedit nemo, praesentium blanditiis voluptates porro! Adipisci, tenetur! Numquam laboriosam odio delectus inventore iste atque illum dicta impedit. Ab, eum accusamus? Ipsam, provident exercitationem. Fugit aliquid voluptatum enim nemo ipsum ea! Necessitatibus eligendi, perspiciatis eius rem quis, eaque obcaecati est officia dolorum cumque praesentium ullam dolores explicabo neque similique fuga accusamus laboriosam voluptas autem ab vero in! Sequi veniam ipsa minus qui quidem maiores aspernatur magnam minima? Ipsa, repellat voluptas saepe ipsum cumque aspernatur recusandae at quae illum. Dignissimos animi voluptatum quaerat dicta id debitis similique harum? Ducimus libero consequuntur soluta iusto doloribus, fugiat voluptatem accusamus, vero beatae et non earum quaerat ex ullam itaque repellat repudiandae consectetur facilis ipsa officia labore aspernatur praesentium? Non, quas!
+            </p>Card 2</div>
+        <div class="card">Card 3</div>
+    </div>
+</body>
+</html>

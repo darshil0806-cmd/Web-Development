@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            color: black;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .cgreen{
+            color: green;
+        }
+        [data-x="a"]
+        {
+            color: blue;
+            /* class and data have same specificty but purple vadhare neche che toh eno color lagse */
+        }
+        p {
+        color: red !important;
+        /* important che toh ane specificity inline thi pan vadhare che */
+        }
+
+        .cpurple{
+            color: purple;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1 class="yellow cred cgreen cpurple" data-x="a">specificity and cascade</h1>
+    <div>
+        <p>
+            the Specificity Hierarchy -
+            Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector
+        </p>
+    </div>
+</body>
+</html>

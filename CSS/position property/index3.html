@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Position Absolute Example</title>
+  <style>
+    .container {
+      position: relative;  /* Acts as reference for absolute child */
+      border: 2px solid #333;
+      padding: 40px;
+      height: 200px;
+    }
+
+    .logo {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      width: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1>CodeWithHarry</h1>
+  <div class="container">
+    <p>Developer</p>
+    <p>Founder of CodeWithHarry</p>
+    <p>CSS Position Absolute Example</p>
+    <p>Elements are positioned relative to the closest positioned ancestor (parent), which means we need to have a parent element with a positioning other than 'static'.
+
+Note: An absolutely positioned element is removed from the normal flow.</p>
+    <img class="logo" src="./logo.png" alt="logo">
+  </div>
+</body>
+</html>

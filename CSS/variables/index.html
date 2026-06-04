@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root {
+        --color : lightblue; /* Define a custom property (CSS variable) at the root level */
+        --seccolor: green;
+        --defopacity: 0.8;
+    }
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        --main-bg-color: lightblue; /* Define a custom property (CSS variable) */
+        background-color: var(--color); /* Use the custom property */
+        padding: 20px;
+        border: 2px solid #333;
+    }
+    ul{
+        display: flex;
+        /* to put home about and contact vertically to horizontally */
+    }
+    ul li{
+        list-style: none;
+        padding: 10px 20px;
+        background-color: var(--seccolor); /* Use the custom property */
+        margin-right: 10px;
+        opacity: var(--defopacity); /* Use the custom property */   
+    }
+    ul li:first-child{
+        --color:lightcoral; /* Change the value of the custom property for the first list item */
+        background-color: var(--color);
+    }
+    .container:hover {
+        --main-bg-color: lightcoral; /* Change the value of the custom property on hover */
+    }
+
+</style>
+<body>
+    <div>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, tenetur? Aliquid, a reprehenderit quam molestias facere fuga commodi nesciunt delectus veritatis mollitia ad.
+    </div>
+</body>
+</html>
