@@ -1,0 +1,18 @@
+var myArray = [1, "Hello", [2, 3]];
+console.log(myArray.length);
+myArray.push("World");
+console.log(myArray);
+myArray.pop();
+console.log(myArray);
+myArray.shift();
+console.log(myArray);
+myArray.unshift(0);
+console.log(myArray);
+console.log(myArray.slice(1, 2)); 
+myArray.join("and ");
+myArray.splice(1, 1, "Hello World", [4, 5]);
+console.log(myArray);
+var arr1 = [1, 2, 3];
+var arr2 = [4, 5, 6];
+var combined = arr1.concat(arr2);
+console.log(combined);

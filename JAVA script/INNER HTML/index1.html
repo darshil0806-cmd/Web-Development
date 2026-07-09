@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Variables</title>
+</head>
+
+<body>
+    <div class="myClass">This is my div</div>
+    <div class="myClass">This is my div</div>
+    <div class="myClass">This is my div</div>
+    <script>
+        let elements = document.getElementsByClassName("myClass");
+        for (let i = 0; i < elements.length; i++) {
+            elements[i].innerHTML = "This is my new text";
+        }
+    </script>
+</body>
+
+</html>
